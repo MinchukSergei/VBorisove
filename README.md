@@ -1,5 +1,12 @@
-# special_course_vborisove
+# VBorisove
 
+# Front-end
+JS, Bootstrap, HTML, CSS, Jsp
+
+# Back-end
+MySQL, Hibernate, Spring, Java
+
+# Основные возможности
 1.Регистраиция
 2.Аутентификация
 3.Галерея фотографий с достопримечательностями города Борисова

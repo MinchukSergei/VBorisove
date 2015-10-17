@@ -1,16 +1,35 @@
+.container {
+	text-align: center;
+}
+
+.container h1 {
+    font-size: 22px;
+    color: #FFFFE0;
+ }
+
+ body {
+    background: url(../img/registration.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+
+
+/*=========================================*/
+
 .navbar-brand, .navbar-nav{
     padding-top: 0;
 }
 
 .navbar-default {
 	background-color: #FFBF00;
+	border-style: none;
 }
 
 .navbar-my {
-
 	white-space: nowrap;
 	border-style: none;
-	
 }
 
 .navbar div {
@@ -55,3 +74,6 @@ footer p {
 	text-align: center;
 	color: #999999;
 }
+
+
+

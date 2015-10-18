@@ -1,0 +1,48 @@
+.navbar-brand, .navbar-nav{
+    padding-top: 0;
+}
+
+.navbar-default {
+	background-color: #FFBF00;
+}
+
+.navbar-default .navbar-nav li a{
+	color: #122b40;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav li a:hover{
+	color: #23527c;
+}
+
+footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #3f4245;
+	position: fixed;
+}
+
+footer p {
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	color: #999999;
+}
+
+.carousel-inner {
+	height: 70%;
+	width: 70%;
+	margin: auto;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+

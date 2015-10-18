@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<script src="/js/jquery-2.1.4.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/image-info.js" defer></script>
 	<link rel='stylesheet' href='/css/bootstrap.min.css' type='text/css' media='all'>
 	<link rel='stylesheet' href="/css/navigation.css">
 </head>
@@ -12,13 +13,13 @@
 
 
 <nav class="navbar navbar-fixed-top navbar-default">
-	<div class="container">
+	<div class="container-fluid">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<img alt="Brand" src="/img/vb.png">
+		<a class="navbar-brand"><img src="/img/vb.png"></a>
 		<div class="collapse navbar-collapse navbar-right" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li><a href="#">Главная</a></li>
@@ -31,48 +32,73 @@
 	</div>
 </nav>
 
-<nav class="navbar navbar-inverse">
-	<div class="container-fluid">
+<div class="player">
+	<audio controls="controls">
+		Your browser does not support the <code>audio</code> element.
+		<source src="http://online-radiorelax.tavrmedia.ua/RadioRelax_Nature?63" type="audio/wav">
+	</audio>
+</div>
 
-	</div>
-</nav>
 
-
-<div id="myContainer" class="container">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
-
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="/img/test1.jpg" alt="Chania" width="350" height="400">
-			</div>
-
-			<div class="item">
-				<img src="/img/test2.jpg" alt="Chania" width="350" height="400">
-			</div>
-
-			<div class="item">
-				<img src="/img/test3.jpg" alt="Flower" width="350" height="400">
-			</div>
+<div class="gallary">
+	<div class="flex-container">
+		<div class="flex1">
+			<img src="/img/test1.jpg" alt="USATAYABABA" class="image-link">
 		</div>
 
-		<!-- Left and right controls -->
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
+		<div class="flex1">
+			<img src="/img/test2.jpg" alt="USATAYABABA" class="image-link">
+			<span class="image-description" hidden>HELLo</span>
+			<span class="liked" hidden>1</span>
+		</div>
+		<div class="flex1">
+			<img src="/img/test3.jpg" alt="USATAYABABA" class="image-link">
+		</div>
+		<div class="flex1">
+			<img src="/img/test4.jpg" alt="USATAYABABA" class="image-link">
+		</div>
+		<div class="flex1">
+			<img src="/img/test1.jpg" alt="USATAYABABA" class="image-link">
+		</div>
+		<div class="flex1">
+			<img src="/img/test2.jpg" alt="USATAYABABA" class="image-link">
+		</div>
+		<div class="flex1">
+			<img src="/img/test3.jpg" alt="USATAYABABA" class="image-link">
+		</div>
+
+		<div class="flex1">
+			<img src="/img/test4.jpg" alt="USATAYABABA" class="image-link">
+		</div>
 	</div>
 </div>
+
+<div class="container modal-container">
+		<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Image</h4>
+				</div>
+				<div class="modal-body">
+					<img class="modal-image" src="" alt="USATAYABABA" class="image-link">
+					<div class="like" >
+						<span class="glyphicon like-span" id="id-like"></span>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<span class="modal-description"></span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
 
 <footer>
 	<div class="container">
